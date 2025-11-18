@@ -15,11 +15,11 @@ export function TranscriptViewer({
   useEffect(() => {
     if (focusedSource) {
       setSelectedInterviewId(focusedSource.interview_id);
-    } else if (interviews.length > 0 && !selectedInterviewId) {
+    } else if (interviews.length > 0 && selectedInterviewId === null) {
       // Default to first interview if none selected
       setSelectedInterviewId(interviews[0].interview_id);
     }
-  }, [focusedSource, interviews, selectedInterviewId]);
+  }, [focusedSource, interviews]);
 
   useEffect(() => {
     if (!focusedSource || !open) return;
