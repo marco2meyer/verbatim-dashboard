@@ -3,51 +3,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--color-cream);
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.rainbowBg {
+.container::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    124deg,
-    #ff2400,
-    #e81d1d,
-    #e8b71d,
-    #e3e81d,
-    #1de840,
-    #1ddde8,
-    #2b1de8,
-    #dd00f3,
-    #dd00f3
-  );
-  background-size: 1800% 1800%;
-  animation: rainbow 18s ease infinite;
-  opacity: 0.8;
-}
-
-@keyframes rainbow {
-  0% {
-    background-position: 0% 82%;
-  }
-  50% {
-    background-position: 100% 19%;
-  }
-  100% {
-    background-position: 0% 82%;
-  }
+  height: 40%;
+  background: linear-gradient(135deg, var(--color-forest-ink) 0%, #2A5347 100%);
+  z-index: 0;
 }
 
 .loginCard {
   position: relative;
   background: white;
   border-radius: var(--radius-lg);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-lg);
   padding: var(--spacing-3xl);
   width: 100%;
   max-width: 450px;
@@ -69,25 +45,8 @@
 .title {
   margin: 0 0 var(--spacing-xs) 0;
   font-size: 1.75rem;
-  background: linear-gradient(
-    135deg,
-    #667eea 0%,
-    #764ba2 25%,
-    #f093fb 50%,
-    #667eea 75%,
-    #764ba2 100%
-  );
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: rainbowText 3s linear infinite;
-}
-
-@keyframes rainbowText {
-  to {
-    background-position: 200% center;
-  }
+  font-family: var(--font-heading);
+  color: var(--color-forest-ink);
 }
 
 .subtitle {
@@ -120,16 +79,22 @@
   font-size: 1rem;
   transition: all 0.3s ease;
   box-sizing: border-box;
+  font-family: var(--font-body);
+  color: var(--color-forest-ink);
 }
 
 .input:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: var(--color-sage);
+  box-shadow: 0 0 0 3px rgba(139, 168, 136, 0.1);
 }
 
 .inputError {
   border-color: var(--color-error);
+}
+
+.inputError:focus {
+  box-shadow: 0 0 0 3px rgba(214, 69, 69, 0.1);
 }
 
 .errorText {
@@ -142,11 +107,7 @@
 .submitButton {
   width: 100%;
   padding: var(--spacing-md) var(--spacing-lg);
-  background: linear-gradient(
-    135deg,
-    #667eea 0%,
-    #764ba2 100%
-  );
+  background: var(--color-coral);
   color: white;
   border: none;
   border-radius: var(--radius-md);
@@ -158,17 +119,14 @@
   align-items: center;
   justify-content: center;
   gap: var(--spacing-sm);
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(255, 107, 88, 0.25);
+  min-height: 48px;
 }
 
 .submitButton:hover {
+  background: var(--color-coral-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-  background: linear-gradient(
-    135deg,
-    #764ba2 0%,
-    #667eea 100%
-  );
+  box-shadow: 0 6px 20px rgba(255, 107, 88, 0.35);
 }
 
 .submitButton:active {
@@ -190,32 +148,14 @@
 
 .footer {
   margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-light-gray);
+  text-align: center;
 }
 
-.rainbowDivider {
-  height: 4px;
-  border-radius: 2px;
-  background: linear-gradient(
-    90deg,
-    #ff0000,
-    #ff7f00,
-    #ffff00,
-    #00ff00,
-    #0000ff,
-    #4b0082,
-    #9400d3
-  );
-  background-size: 200% 100%;
-  animation: rainbowSlide 3s linear infinite;
-}
-
-@keyframes rainbowSlide {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 200% 50%;
-  }
+.footerText {
+  color: var(--color-slate);
+  font-size: 0.875rem;
 }
 
 @media (max-width: 768px) {
@@ -231,3 +171,4 @@
     height: 50px;
   }
 }
+
