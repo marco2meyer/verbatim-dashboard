@@ -20,7 +20,6 @@ export function Login({ onLogin }: LoginProps) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.rainbowBg}></div>
       <div className={styles.loginCard}>
         <div className={styles.logoSection}>
           <img
@@ -61,7 +60,9 @@ export function Login({ onLogin }: LoginProps) {
         </form>
 
         <div className={styles.footer}>
-          <div className={styles.rainbowDivider}></div>
+          <p className={styles.footerText}>
+            Verbatim Values Analysis Dashboard
+          </p>
         </div>
       </div>
     </div>
