@@ -11,6 +11,7 @@ export function ValuesOverviewPage() {
   const [sortBy, setSortBy] = useState<'importance' | 'realization' | null>(null);
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
   const [transcriptViewerOpen, setTranscriptViewerOpen] = useState(false);
+  const [focusedSource, setFocusedSource] = useState<{ interview_id: string; chunk_numbers: number[] } | undefined>();
 
   const sortedValues = useMemo(() => {
     if (!data?.values_overview) return [];
@@ -41,9 +42,32 @@ export function ValuesOverviewPage() {
     navigate(`/value/${valueId}`);
   };
 
-  const formatWording = (examples: string[]) => {
-    if (!examples.length) return 'No examples available';
-    return examples[0].substring(0, 200) + (examples[0].length > 200 ? '...' : '');
+  const parseExample = (example: string) => {
+    // Extract the quote text (between first " and last " before the parenthesis)
+    const quoteMatch = example.match(/^"(.+?)"\s*\(/);
+    const quote = quoteMatch ? quoteMatch[1] : example;
+
+    // Extract interview_id and chunk number
+    const interviewIdMatch = example.match(/interview_id:\s*([a-f0-9-]+)/);
+    const chunkMatch = example.match(/chunk:\s*(\d+)/);
+
+    return {
+      quote,
+      interview_id: interviewIdMatch ? interviewIdMatch[1] : null,
+      chunk_number: chunkMatch ? parseInt(chunkMatch[1]) : null,
+    };
+  };
+
+  const handleExampleClick = (e: React.MouseEvent, example: string) => {
+    e.stopPropagation();
+    const parsed = parseExample(example);
+    if (parsed.interview_id && parsed.chunk_number) {
+      setFocusedSource({
+        interview_id: parsed.interview_id,
+        chunk_numbers: [parsed.chunk_number],
+      });
+      setTranscriptViewerOpen(true);
+    }
   };
 
   if (loading) {
@@ -88,7 +112,7 @@ export function ValuesOverviewPage() {
       <div className={styles.table}>
         <div className={styles.tableHeader}>
           <div>Value</div>
-          <div>Interviewee Wording</div>
+          <div>Example</div>
           <div
             onClick={() => handleSort('importance')}
             style={{ cursor: 'pointer' }}
@@ -120,15 +144,14 @@ export function ValuesOverviewPage() {
           >
             <div className={styles.valueLabel}>{value.label}</div>
 
-            <div className={styles.wordingExamplesWrapper}>
-              <div className={styles.wordingExamples}>
-                {formatWording(value.interviewee_wording_examples)}
-              </div>
-              {value.interviewee_wording_examples.length > 0 && value.interviewee_wording_examples[0].length > 200 && (
-                <div className={styles.wordingTooltip}>
-                  {value.interviewee_wording_examples[0]}
-                </div>
-              )}
+            <div
+              className={styles.exampleCell}
+              onClick={(e) => handleExampleClick(e, value.interviewee_wording_examples[0])}
+              title="Click to view in transcript"
+            >
+              {value.interviewee_wording_examples.length > 0
+                ? parseExample(value.interviewee_wording_examples[0]).quote
+                : 'No examples available'}
             </div>
 
             <div className={styles.scoreColumn}>
@@ -164,6 +187,7 @@ export function ValuesOverviewPage() {
         interviews={data?.interviews_raw || []}
         open={transcriptViewerOpen}
         onClose={() => setTranscriptViewerOpen(false)}
+        focusedSource={focusedSource}
       />
     </div>
   );
