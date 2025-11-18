@@ -6,7 +6,7 @@ import { ValuesOverviewPage } from './pages/ValuesOverviewPage';
 import { ValueDetailPage } from './pages/ValueDetailPage';
 import { Login } from './components/Login';
 
-const CORRECT_PASSWORD = 'demo2024'; // In production, use proper authentication
+const CORRECT_PASSWORD = 'rainbow'; // In production, use proper authentication
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
