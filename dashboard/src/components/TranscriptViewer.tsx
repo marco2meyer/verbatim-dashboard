@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { type TranscriptViewerProps, type Interview, type Chunk } from '../types';
 import styles from './TranscriptViewer.module.css';
 
@@ -9,6 +9,17 @@ export function TranscriptViewer({
   focusedSource,
 }: TranscriptViewerProps) {
   const chunkRefs = useRef<Record<number, HTMLDivElement | null>>({});
+  const [selectedInterviewId, setSelectedInterviewId] = useState<string | null>(null);
+
+  // When focusedSource changes, update selected interview
+  useEffect(() => {
+    if (focusedSource) {
+      setSelectedInterviewId(focusedSource.interview_id);
+    } else if (interviews.length > 0 && !selectedInterviewId) {
+      // Default to first interview if none selected
+      setSelectedInterviewId(interviews[0].interview_id);
+    }
+  }, [focusedSource, interviews, selectedInterviewId]);
 
   useEffect(() => {
     if (!focusedSource || !open) return;
@@ -31,13 +42,21 @@ export function TranscriptViewer({
     }
   };
 
-  if (!focusedSource) {
+  const currentInterview = interviews.find(
+    (i: Interview) => i.interview_id === selectedInterviewId
+  );
+
+  const handleInterviewChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedInterviewId(e.target.value);
+  };
+
+  if (!currentInterview) {
     return (
       <div className={styles.overlay} onClick={handleOverlayClick}>
         <div className={styles.drawer}>
           <div className={styles.header}>
             <div>
-              <h3 className={styles.headerTitle}>Transcript</h3>
+              <h3 className={styles.headerTitle}>Transcripts</h3>
             </div>
             <button className={styles.closeButton} onClick={onClose}>
               ✕
@@ -45,33 +64,7 @@ export function TranscriptViewer({
           </div>
           <div className={styles.content}>
             <div className={styles.emptyState}>
-              No transcript reference available
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  const interview = interviews.find(
-    (i: Interview) => i.interview_id === focusedSource.interview_id
-  );
-
-  if (!interview) {
-    return (
-      <div className={styles.overlay} onClick={handleOverlayClick}>
-        <div className={styles.drawer}>
-          <div className={styles.header}>
-            <div>
-              <h3 className={styles.headerTitle}>Transcript Not Found</h3>
-            </div>
-            <button className={styles.closeButton} onClick={onClose}>
-              ✕
-            </button>
-          </div>
-          <div className={styles.content}>
-            <div className={styles.missingMessage}>
-              Interview with ID {focusedSource.interview_id} not found.
+              No interviews available
             </div>
           </div>
         </div>
@@ -83,13 +76,19 @@ export function TranscriptViewer({
     <div className={styles.overlay} onClick={handleOverlayClick}>
       <div className={styles.drawer}>
         <div className={styles.header}>
-          <div>
-            <h3 className={styles.headerTitle}>
-              {interview.interviewee_first_name} - {interview.interviewee_role}
-            </h3>
-            <p className={styles.headerSubtitle}>
-              Full Interview Transcript
-            </p>
+          <div className={styles.headerContent}>
+            <h3 className={styles.headerTitle}>Interview Transcript</h3>
+            <select
+              className={styles.interviewSelect}
+              value={selectedInterviewId || ''}
+              onChange={handleInterviewChange}
+            >
+              {interviews.map((interview: Interview) => (
+                <option key={interview.interview_id} value={interview.interview_id}>
+                  {interview.interviewee_first_name} - {interview.interviewee_role}
+                </option>
+              ))}
+            </select>
           </div>
           <button className={styles.closeButton} onClick={onClose}>
             ✕
@@ -97,8 +96,9 @@ export function TranscriptViewer({
         </div>
 
         <div className={styles.content}>
-          {interview.chunks.map((chunk: Chunk) => {
-            const isHighlighted = focusedSource.chunk_numbers.includes(chunk.chunk_number);
+          {currentInterview.chunks.map((chunk: Chunk) => {
+            const isHighlighted = focusedSource?.chunk_numbers.includes(chunk.chunk_number) &&
+                                  focusedSource?.interview_id === currentInterview.interview_id;
             const chunkClass = chunk.speaker === 'interviewee'
               ? styles.chunkInterviewee
               : styles.chunkInterviewer;
@@ -113,7 +113,7 @@ export function TranscriptViewer({
                 <div className={styles.chunkHeader}>
                   <span className={styles.chunkSpeaker}>
                     {chunk.speaker === 'interviewee'
-                      ? interview.interviewee_first_name
+                      ? currentInterview.interviewee_first_name
                       : 'Interviewer'}
                   </span>
                   <span className={styles.chunkNumber}>#{chunk.chunk_number}</span>
