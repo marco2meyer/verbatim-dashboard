@@ -1,0 +1,672 @@
+{
+  "INTERVIEWS": [
+    {
+      "interview_id": "30ecf270-4f52-4b4d-8e76-8dce7e0d5642",
+      "interviewee_first_name": "Michael",
+      "interviewee_role": "HR Business Partner",
+      "chunks": [
+        {
+          "chunk_number": 1,
+          "speaker": "interviewee",
+          "text": "At its best culture becomes a performed rhetoric. People recite values while politics actually decide outcomes. Meaningful change rarely happens."
+        },
+        {
+          "chunk_number": 2,
+          "speaker": "interviewer",
+          "text": "Thank you for being that direct, that is really helpful. I hear you saying that at its best it can feel polished in how people talk about values, but underneath, politics and power shape what really happens and meaningful change is rare.\n\nI captured something like realism or honesty about power and politics, and maybe a sense of cynicism about stated values. Did I get that right?"
+        },
+        {
+          "chunk_number": 3,
+          "speaker": "interviewee",
+          "text": "Yes. It sounds about right. I'm cynical but that's just real."
+        },
+        {
+          "chunk_number": 4,
+          "speaker": "interviewer",
+          "text": "I understand, and many colleagues share some version of that experience, though others describe it very differently. Both are important to hear.\n\nStaying with that realism for a moment, when people “recite values” what are the kinds of values you hear talked about most often?"
+        },
+        {
+          "chunk_number": 5,
+          "speaker": "interviewee",
+          "text": "Integrity often. It’s about transparency and accountability on paper even if real actions seldom measure up."
+        },
+        {
+          "chunk_number": 6,
+          "speaker": "interviewer",
+          "text": "Thank you, that is very clear. I hear integrity, transparency and accountability as core words in the rhetoric, with a clear gap to lived practice.\n\nIf we just take integrity for a moment, if we named the best version of integrity here in a few words, what would you call it?"
+        },
+        {
+          "chunk_number": 7,
+          "speaker": "interviewee",
+          "text": "Real honesty that doesn't fear hard decisions."
+        },
+        {
+          "chunk_number": 8,
+          "speaker": "interviewer",
+          "text": "Thank you, that is very clear. I hear “real honesty that does not fear hard decisions” as a stronger version of integrity than what is often talked about.\n\nCan you describe a recent moment where you saw even a glimpse of that kind of integrity in action at the Corporation? What happened and what made it feel closer to “real honesty”?"
+        },
+        {
+          "chunk_number": 9,
+          "speaker": "interviewee",
+          "text": "At a meeting a colleague admitted a mistake without excuses. That honest moment cut through the usual blame game."
+        },
+        {
+          "chunk_number": 10,
+          "speaker": "interviewer",
+          "text": "Thank you, that example is very vivid. I hear that a simple, unvarnished admission of a mistake shifted the whole tone and interrupted the usual pattern of deflection and blame.\n\nOn an ordinary day, what would someone do or say that shows this kind of real honesty that does not fear hard decisions?"
+        },
+        {
+          "chunk_number": 11,
+          "speaker": "interviewee",
+          "text": "Someone might openly admit they messed up and propose how to fix it instead of deflecting blame."
+        },
+        {
+          "chunk_number": 12,
+          "speaker": "interviewer",
+          "text": "Thank you, that makes sense and links nicely to the story you shared.\n\nLet me reflect back what I heard on integrity as real honesty. Everyday signals are people owning mistakes without spin, naming issues plainly, and focusing on how to fix things rather than shifting blame, even when it is uncomfortable. Did I get this right?"
+        },
+        {
+          "chunk_number": 13,
+          "speaker": "interviewee",
+          "text": "Yes, that's it. No sugar coating."
+        },
+        {
+          "chunk_number": 14,
+          "speaker": "interviewer",
+          "text": "That is very clear, thank you.\n\nI would like to test something I have heard from other colleagues. Some people told me that integrity is important, for instance in the sense that when a supplier offers gifts or hospitality around a contract decision, they either politely decline or record it and keep meetings neutral, like remote or in a neutral place, especially near decisions.  \n\nDoes this resonate with your experience?"
+        },
+        {
+          "chunk_number": 15,
+          "speaker": "interviewee",
+          "text": "Yes, I've seen it. Colleagues either decline gifts or record them. It's often just ticking boxes rather than true conviction."
+        },
+        {
+          "chunk_number": 16,
+          "speaker": "interviewer",
+          "text": "I understand, so the surface behaviour is often there, but it can feel like compliance rather than genuine integrity.\n\nStaying with that gap between “ticking boxes” and “true conviction,” what do you think would need to change so that acting with integrity feels real and internally motivated rather than just procedural?"
+        },
+        {
+          "chunk_number": 17,
+          "speaker": "interviewee",
+          "text": "It demands real accountability from leaders and consequences for half measures. Checklists won't change the culture."
+        },
+        {
+          "chunk_number": 18,
+          "speaker": "interviewer",
+          "text": "I hear you saying that without real accountability at senior levels, integrity will stay as process, not culture, and that consequences matter more than more forms or checklists.\n\nIf accountability and consequences were working properly, what would you expect to see happen when a leader falls short of the values?"
+        },
+        {
+          "chunk_number": 19,
+          "speaker": "interviewee",
+          "text": "They would be held fully accountable. No token apologies or cover ups. Real consequences would follow."
+        },
+        {
+          "chunk_number": 20,
+          "speaker": "interviewer",
+          "text": "Thank you, that is very direct and clear. I hear that for you, real integrity means leaders are treated like anyone else, with visible follow through, not symbolic gestures.\n\nOf the values we have talked about so far, especially this idea of real honesty with accountability, which one or two do you think City of London Corporation should focus on first?"
+        },
+        {
+          "chunk_number": 21,
+          "speaker": "interviewee",
+          "text": "Real accountability and honest transparency. Without those, everything is just talk."
+        },
+        {
+          "chunk_number": 22,
+          "speaker": "interviewer",
+          "text": "I understand, you are putting real accountability and honest transparency at the foundation and saying that without them everything else is performative.\n\nThinking about practical change, what is one concrete behaviour you would like to see start happening next quarter that would show real accountability or honest transparency?"
+        },
+        {
+          "chunk_number": 23,
+          "speaker": "interviewee",
+          "text": "Leaders openly admitting mistakes and detailing public corrective actions. That visibility forces real accountability."
+        },
+        {
+          "chunk_number": 24,
+          "speaker": "interviewer",
+          "text": "Thank you, that is very specific and practical. I hear the emphasis on leaders naming mistakes plainly and explaining what will change, in a visible way, as a key behaviour.\n\nOne more question on making this real. What is one concrete change in how meetings, communication or decision making are run that would help this kind of honest transparency show up more often?"
+        },
+        {
+          "chunk_number": 25,
+          "speaker": "interviewee",
+          "text": "Meetings should begin with a debrief where leaders admit mistakes and outline clear corrective actions."
+        },
+        {
+          "chunk_number": 26,
+          "speaker": "interviewer",
+          "text": "Thank you, that is very clear. I understand you are suggesting a routine where leaders regularly role model honesty at the start of meetings by naming what went wrong and what will be done differently.\n\nLet me offer a short summary of what I heard from you. Culture today often feels like performed rhetoric, where integrity and other values are spoken about but politics decide outcomes and meaningful change is rare. The value you would want is real honesty that does not fear hard decisions, backed by real accountability and honest transparency. Everyday, this would look like people owning mistakes without sugar coating, not playing the blame game, and focusing on how to fix issues. You see that some integrity behaviours around things like gifts do happen, but often as box ticking, not conviction. For integrity to be real, you want leaders held fully accountable when they fall short, with visible consequences rather than token apologies. Your top priority is real accountability and honest transparency, starting with leaders who openly admit mistakes, explain corrective actions, and even begin meetings with a short debrief on what went wrong and what will change.\n\nDoes this summary reflect your input, or should I amend anything?"
+        },
+        {
+          "chunk_number": 27,
+          "speaker": "interviewee",
+          "text": "Yes, that's exactly it. No amendments needed."
+        },
+        {
+          "chunk_number": 28,
+          "speaker": "interviewer",
+          "text": "Thank you, that is really helpful and very clear input.\n\nThank you for contributing. I’ll take a summary of your input combined anonymously with others to the leadership team to shape City of London Corporation’s values and everyday behaviours. If you wish to add more, now or later, just say “add more”."
+        },
+        {
+          "chunk_number": 29,
+          "speaker": "interviewee",
+          "text": "Thanks for listening. I'll add more if needed."
+        }
+      ]
+    },
+    {
+      "interview_id": "70a6c79c-2969-4b6d-8273-d9daf453d526",
+      "interviewee_first_name": "Thomas",
+      "interviewee_role": "Estates and Facilities Manager",
+      "chunks": [
+        {
+          "chunk_number": 1,
+          "speaker": "interviewee",
+          "text": "It's a blend of genuine care and pride in maintaining history and safety. We all back each other up under tight rules and high expectations, and that's what makes it work."
+        },
+        {
+          "chunk_number": 2,
+          "speaker": "interviewer",
+          "text": "Thank you, that is really clear and helpful. I am hearing a mix of genuine care, pride in looking after history and safety, and a strong sense of backing each other up even within tight rules and high expectations. It sounds like teamwork under pressure, with a lot of responsibility.\n\nDid I capture that right?"
+        },
+        {
+          "chunk_number": 3,
+          "speaker": "interviewee",
+          "text": "Yes, that's right."
+        },
+        {
+          "chunk_number": 4,
+          "speaker": "interviewer",
+          "text": "Thanks for confirming.  \n\nIf you gave a short name to one of these things, what would you call it, for example the genuine care and backing each other up part?"
+        },
+        {
+          "chunk_number": 5,
+          "speaker": "interviewee",
+          "text": "I call it our all in spirit. It's that feeling of having each other's back no matter what challenges we face."
+        },
+        {
+          "chunk_number": 6,
+          "speaker": "interviewer",
+          "text": "I understand, all in spirit is a really clear way to put it, with that sense of having each others back whatever comes.\n\nCan you describe a recent moment where you saw this all in spirit in action at work? What happened and who was involved?"
+        },
+        {
+          "chunk_number": 7,
+          "speaker": "interviewee",
+          "text": "Last week a leak in an old building had us all rushing together. Techs, contractors, and management worked fast to stop damage. That was all in spirit."
+        },
+        {
+          "chunk_number": 8,
+          "speaker": "interviewer",
+          "text": "Thank you, that gives a very concrete picture. I hear different groups jumping in quickly together, across roles, to protect the building and limit damage.\n\nOn an ordinary day, when there is no leak or big incident, what would someone do or say that shows this all in spirit?"
+        },
+        {
+          "chunk_number": 9,
+          "speaker": "interviewee",
+          "text": "Someone might pop by and say thanks for fixing a snag on time or note a colleague's extra help on a routine check. It's simple but shows we all care."
+        },
+        {
+          "chunk_number": 10,
+          "speaker": "interviewer",
+          "text": "I understand, so even small moments of thanks and noticing extra effort are everyday signs of that all in spirit and mutual care.\n\nLet me briefly reflect back what I heard on all in spirit. It is everyone pulling together fast in a crunch, across roles, to protect people and buildings, and on a normal day it shows up as colleagues actively thanking each other and calling out extra help. Did I get this right?"
+        },
+        {
+          "chunk_number": 11,
+          "speaker": "interviewee",
+          "text": "That's right. It's all about teamwork under pressure and everyday appreciation."
+        },
+        {
+          "chunk_number": 12,
+          "speaker": "interviewer",
+          "text": "That makes sense, teamwork under pressure and everyday appreciation feels like a clear picture.\n\nSome colleagues in other teams told me that integrity is important, for example when a supplier offers gifts or hospitality around a contract decision and they choose to politely decline or record it and keep meetings neutral or remote. Does this resonate with your experience?"
+        },
+        {
+          "chunk_number": 13,
+          "speaker": "interviewee",
+          "text": "Yes, integrity is non-negotiable. We keep everything above board and transparent to build trust all through our work processes."
+        },
+        {
+          "chunk_number": 14,
+          "speaker": "interviewer",
+          "text": "I understand, so for you integrity is something that has to be consistent and visible in how work is done, not just a word on a page.\n\nCan you share a short example from your own area where that kind of above board and transparent approach showed up in practice?"
+        },
+        {
+          "chunk_number": 15,
+          "speaker": "interviewee",
+          "text": "We had a situation where a supplier offered a small gift during a bid. I declined it, noted the incident, and kept meetings strictly professional."
+        },
+        {
+          "chunk_number": 16,
+          "speaker": "interviewer",
+          "text": "Thank you, that is a very clear example of what integrity looks like in real decisions.\n\nIf we gave a short name to that value you just described, about keeping things above board and transparent to build trust, what would you call it?"
+        },
+        {
+          "chunk_number": 17,
+          "speaker": "interviewee",
+          "text": "I call it straight dealing. It means keeping every step clear and honest so everyone knows what's really going on."
+        },
+        {
+          "chunk_number": 18,
+          "speaker": "interviewer",
+          "text": "I understand, straight dealing sounds like a very concrete way to describe clear and honest steps that everyone can see and understand.\n\nOn a normal working day, what would someone do or say that shows straight dealing in your team or with suppliers?"
+        },
+        {
+          "chunk_number": 19,
+          "speaker": "interviewee",
+          "text": "People might share all emails and details right after a meeting or openly confirm terms with suppliers. No secrets and no hush-hush arrangements makes it clear for everyone."
+        },
+        {
+          "chunk_number": 20,
+          "speaker": "interviewer",
+          "text": "That makes sense, so straight dealing shows up in open communication, sharing information promptly, and making sure there are no side conversations that others are unaware of.\n\nLet me reflect back what I heard on straight dealing. It is keeping every step clear and honest so people can see how decisions are made, for example by declining gifts, recording them, sharing emails and meeting notes, and confirming terms openly with suppliers. Did I get this right?"
+        },
+        {
+          "chunk_number": 21,
+          "speaker": "interviewee",
+          "text": "That's right. It's about transparency in every action and discussion."
+        },
+        {
+          "chunk_number": 22,
+          "speaker": "interviewer",
+          "text": "Thank you, that is very clear and specific.\n\nOf the values we have talked about so far, all in spirit and straight dealing, which one do you think City of London Corporation should focus on first to improve the culture?"
+        },
+        {
+          "chunk_number": 23,
+          "speaker": "interviewee",
+          "text": "I lean toward straight dealing. When every step is clear and above board it builds trust and sets the stage for all in spirit to really flourish."
+        },
+        {
+          "chunk_number": 24,
+          "speaker": "interviewer",
+          "text": "I understand, so for you straight dealing is almost a foundation, and when people trust the process they are more willing to lean into that all in spirit.\n\nThinking about straight dealing, what is one concrete change that would help this value show up more in daily work, for example in meetings, decisions or how information is shared?"
+        },
+        {
+          "chunk_number": 25,
+          "speaker": "interviewee",
+          "text": "I think recording meeting minutes and sharing them right away would help. It sets a clear, transparent standard for decisions and keeps everyone informed."
+        },
+        {
+          "chunk_number": 26,
+          "speaker": "interviewer",
+          "text": "Thank you, that is a very practical and concrete suggestion, and it fits closely with what you described.\n\nLet me offer a short summary of what I heard from you. At its best, the culture feels like genuine care and pride in maintaining history and safety, with people backing each other up under tight rules and high expectations. One key value you named is all in spirit, where teamwork under pressure shows up in everyone rushing together across roles in a crisis, and on normal days in small thanks and noticing extra help. Another key value is straight dealing, keeping every step clear and honest, for example declining and recording gifts, sharing emails and meeting details, and confirming terms openly with suppliers. You suggested that straight dealing should be the first focus, because it builds trust and creates the conditions for all in spirit to really flourish. A concrete change you would like to see is recording meeting minutes and sharing them quickly, to set a consistent transparent standard for decisions and keep everyone informed.\n\nDoes this summary reflect your input, or should I amend anything?"
+        },
+        {
+          "chunk_number": 27,
+          "speaker": "interviewee",
+          "text": "That's right. You've captured it all accurately."
+        },
+        {
+          "chunk_number": 28,
+          "speaker": "interviewer",
+          "text": "Thank you for confirming, and for sharing such clear examples and ideas.\n\nThank you for contributing. I’ll take a summary of your input combined anonymously with others to the leadership team to shape City of London Corporation’s values and everyday behaviours. If you wish to add more, now or later, just say “add more”."
+        },
+        {
+          "chunk_number": 29,
+          "speaker": "interviewee",
+          "text": "That's right. Thank you."
+        },
+        {
+          "chunk_number": 30,
+          "speaker": "interviewer",
+          "text": "You are very welcome, and thank you again for your time and thoughtfulness today.\n\nThank you for contributing. I’ll take a summary of your input combined anonymously with others to the leadership team to shape City of London Corporation’s values and everyday behaviours. If you wish to add more, now or later, just say “add more”."
+        },
+        {
+          "chunk_number": 31,
+          "speaker": "interviewee",
+          "text": "That's right. Thank you."
+        },
+        {
+          "chunk_number": 32,
+          "speaker": "interviewer",
+          "text": "You are very welcome, and thank you again for taking the time to share your perspective. Your points about all in spirit and straight dealing are very clear and will be part of the wider input.\n\nIf you ever want to add more, just say “add more.”"
+        },
+        {
+          "chunk_number": 33,
+          "speaker": "interviewee",
+          "text": "That's right. Thanks again."
+        }
+      ]
+    },
+    {
+      "interview_id": "df970721-fb54-4ed1-8d58-e4efebb9d272",
+      "interviewee_first_name": "Eleanor",
+      "interviewee_role": "analyst",
+      "chunks": [
+        {
+          "chunk_number": 1,
+          "speaker": "interviewee",
+          "text": "At its best our culture is open, collaborative and evidence driven. People share insights frankly and care about public safety in a pragmatic, people first way."
+        },
+        {
+          "chunk_number": 2,
+          "speaker": "interviewer",
+          "text": "Thank you, that is very clear and helpful. I hear openness, collaboration and being evidence driven, with a strong focus on pragmatic public safety and people first.\n\nIf we gave just one short name to what you described overall, what would you call that value?"
+        },
+        {
+          "chunk_number": 3,
+          "speaker": "interviewee",
+          "text": "Transparency."
+        },
+        {
+          "chunk_number": 4,
+          "speaker": "interviewer",
+          "text": "Thank you, that is very clear.  \n\nCan you describe a recent moment where you saw transparency in action at the City? What happened and who was involved?"
+        },
+        {
+          "chunk_number": 5,
+          "speaker": "interviewee",
+          "text": "At a daily briefing a field officer shared fresh safety data that flagged a risk. We reviewed it openly and made quick adjustments."
+        },
+        {
+          "chunk_number": 6,
+          "speaker": "interviewer",
+          "text": "Thank you, that is a really concrete example.  \n\nIn an ordinary week, what would someone do or say that shows transparency in your area of work?"
+        },
+        {
+          "chunk_number": 7,
+          "speaker": "interviewee",
+          "text": "In our weekly meetings I share data insights openly and invite questions about gaps. Colleagues offer ideas on missing context or improvements."
+        },
+        {
+          "chunk_number": 8,
+          "speaker": "interviewer",
+          "text": "I understand, that sounds like a very everyday but powerful way transparency shows up.  \n\nLet me reflect back what I heard on transparency. Everyday signs are people sharing data and risks openly, inviting questions about gaps, and being willing to adjust plans quickly in response to new information. Did I get that right?"
+        },
+        {
+          "chunk_number": 9,
+          "speaker": "interviewee",
+          "text": "That's right."
+        },
+        {
+          "chunk_number": 10,
+          "speaker": "interviewer",
+          "text": "Thank you for confirming.  \n\nSome colleagues have talked about “integrity and public trust,” for example when a supplier offers gifts or hospitality around a contract decision and staff either politely decline or formally record it and keep discussions neutral, sometimes choosing remote meetings near key decisions.  \n\nDoes this resonate with your experience?"
+        },
+        {
+          "chunk_number": 11,
+          "speaker": "interviewee",
+          "text": "Yes that resonates. I've seen staff document offerings and sometimes adjust meeting locations to avoid any undue influence during key decisions."
+        },
+        {
+          "chunk_number": 12,
+          "speaker": "interviewer",
+          "text": "Thank you, that is helpful context.  \n\nIf we stick with transparency a bit longer, what tends to help this value show up in your work, and what tends to get in the way?"
+        },
+        {
+          "chunk_number": 13,
+          "speaker": "interviewee",
+          "text": "Clear communication and trust among colleagues help by encouraging quick debate and data sharing. Bureaucratic delays and overly rigid procedures sometimes slow it down."
+        },
+        {
+          "chunk_number": 14,
+          "speaker": "interviewer",
+          "text": "I understand, so clear communication and trust make it easier to share and debate data quickly, while bureaucracy and rigid procedures can slow transparency down.  \n\nLet me quickly reflect back transparency. Everyday signs are people sharing data and risks openly, inviting questions about gaps, documenting anything that might affect decisions, and being ready to adjust plans. Enablers are trust and clear communication, obstacles are delays and rigid processes. Did I capture that correctly?"
+        },
+        {
+          "chunk_number": 15,
+          "speaker": "interviewee",
+          "text": "That's right."
+        },
+        {
+          "chunk_number": 16,
+          "speaker": "interviewer",
+          "text": "Thank you for confirming.  \n\nEarlier you also mentioned being open, collaborative and evidence driven with a pragmatic, people first focus. If you picked one of these as another key value to explore next, which would you choose?"
+        },
+        {
+          "chunk_number": 17,
+          "speaker": "interviewee",
+          "text": "I'd choose collaboration next. It unites diverse insights and strengthens the team approach behind actionable, evidence driven solutions for our work."
+        },
+        {
+          "chunk_number": 18,
+          "speaker": "interviewer",
+          "text": "Thank you, that makes sense, collaboration sounds central to how the work comes together.  \n\nIf you had to give collaboration a short label in your context, what would you call it?"
+        },
+        {
+          "chunk_number": 19,
+          "speaker": "interviewee",
+          "text": "Teamwork."
+        },
+        {
+          "chunk_number": 20,
+          "speaker": "interviewer",
+          "text": "Thank you, that is nice and clear.  \n\nCan you share a recent moment where you saw good teamwork in action at the City? What happened and who was involved?"
+        },
+        {
+          "chunk_number": 21,
+          "speaker": "interviewee",
+          "text": "At a recent review meeting, a colleague from operations highlighted a potential gap. We brainstormed together, blending our expertise to craft a faster response."
+        },
+        {
+          "chunk_number": 22,
+          "speaker": "interviewer",
+          "text": "Thank you, that is a helpful example of how teamwork plays out.  \n\nOn an ordinary day, what would someone do or say that shows good teamwork in your area, rather than everyone just working in parallel?"
+        },
+        {
+          "chunk_number": 23,
+          "speaker": "interviewee",
+          "text": "I often see colleagues drop by to share insights or ask for a second opinion, ensuring our work is interdependent and supportive."
+        },
+        {
+          "chunk_number": 24,
+          "speaker": "interviewer",
+          "text": "Thank you, that gives a clear picture of day to day teamwork.\n\nLet me reflect back what I heard on teamwork. Everyday signs are colleagues actively checking in with each other, sharing insights, asking for second opinions and jointly problem solving, so work becomes interdependent rather than separate. In your example this meant spotting a gap and then blending expertise to create a faster response. Did I get that right?"
+        },
+        {
+          "chunk_number": 25,
+          "speaker": "interviewee",
+          "text": "That's right."
+        },
+        {
+          "chunk_number": 26,
+          "speaker": "interviewer",
+          "text": "Thank you for confirming.  \n\nOf the values we have talked about so far, transparency and teamwork, which one do you think City of London Corporation should focus on first to really strengthen the culture?"
+        },
+        {
+          "chunk_number": 27,
+          "speaker": "interviewee",
+          "text": "I lean transparency. Clear data sharing fuels better decisions and naturally enhances teamwork by building trust and agility."
+        },
+        {
+          "chunk_number": 28,
+          "speaker": "interviewer",
+          "text": "Thank you, that link you make between transparency, trust and better teamwork is very clear.  \n\nIf you think about transparency specifically, what is one concrete behaviour you would like to see more of across the City in the next quarter?"
+        },
+        {
+          "chunk_number": 29,
+          "speaker": "interviewee",
+          "text": "I would like to see colleagues sharing real-time risk updates immediately and discussing them openly without delay."
+        },
+        {
+          "chunk_number": 30,
+          "speaker": "interviewer",
+          "text": "Thank you, that is very concrete.  \n\nWhat is one change in how you work, for example meetings, tools, routines, that would make it easier for people to share real time risk updates and discuss them openly?"
+        },
+        {
+          "chunk_number": 31,
+          "speaker": "interviewee",
+          "text": "I would add a quick agenda item in meetings for real time risk updates and use a shared dashboard to keep everyone informed."
+        },
+        {
+          "chunk_number": 32,
+          "speaker": "interviewer",
+          "text": "Thank you, that is specific and practical.\n\nLet me summarise what I heard from you. At its best, the culture feels transparent and collaborative, with a strong people first, evidence driven mindset. Transparency means open data and risk sharing, inviting questions about gaps, documenting anything that might affect decisions and being ready to adjust plans. Teamwork shows up as colleagues checking in, sharing insights and co designing faster responses. Key enablers are trust, clear communication and simple tools. Obstacles are bureaucratic delays and rigid procedures. Your top priority is to strengthen transparency, for example by adding a standing real time risk item to meetings and using a shared dashboard to support open, timely discussion and better decisions.\n\nDoes this summary reflect your input, or should I amend anything?"
+        },
+        {
+          "chunk_number": 33,
+          "speaker": "interviewee",
+          "text": "That's right."
+        }
+      ]
+    },
+    {
+      "interview_id": "e8289334-9373-4065-8a43-d2afd93ed805",
+      "interviewee_first_name": "Sarah",
+      "interviewee_role": "Principal Conservation Officer",
+      "chunks": [
+        {
+          "chunk_number": 1,
+          "speaker": "interviewee",
+          "text": "At its best we respect heritage as much as progress. We refuse shortcuts and demand thorough work that safeguards London's historic character."
+        },
+        {
+          "chunk_number": 2,
+          "speaker": "interviewer",
+          "text": "Thank you, that is really clear and helpful. I hear a few things in what you said: respect for heritage, a commitment to progress rather than being stuck in the past, and a value around doing things thoroughly rather than taking shortcuts. Did I capture that right?"
+        },
+        {
+          "chunk_number": 3,
+          "speaker": "interviewee",
+          "text": "That's right. We insist on measured progress that respects and preserves London's living history."
+        },
+        {
+          "chunk_number": 4,
+          "speaker": "interviewer",
+          "text": "I understand, measured progress that still safeguards living history feels central for you.  \n\nIf we gave that core idea a short name, what would you call it?"
+        },
+        {
+          "chunk_number": 5,
+          "speaker": "interviewee",
+          "text": "Measured Progress."
+        },
+        {
+          "chunk_number": 6,
+          "speaker": "interviewer",
+          "text": "Got it, Measured Progress.  \n\nCan you describe a recent moment where you saw Measured Progress in action in your work, or across the Corporation? What happened and what made it feel like a good example?"
+        },
+        {
+          "chunk_number": 7,
+          "speaker": "interviewee",
+          "text": "We halted a redevelopment encroaching on a historic courtyard. The developer revised the plans to preserve key historic features. That was Measured Progress."
+        },
+        {
+          "chunk_number": 8,
+          "speaker": "interviewer",
+          "text": "Thank you, that example really brings it to life. I understand that Measured Progress looked like being willing to pause a big scheme, protect the historic courtyard, and still work with the developer to revise plans rather than just saying no.  \n\nOn an ordinary day, what would someone do or say that shows this value of Measured Progress in how they go about their work?"
+        },
+        {
+          "chunk_number": 9,
+          "speaker": "interviewee",
+          "text": "Someone might review every detail of proposals, challenge shortcuts, and say \"We must do it right.\" They work patiently to balance progress with preservation."
+        },
+        {
+          "chunk_number": 10,
+          "speaker": "interviewer",
+          "text": "That makes sense, I hear the emphasis on careful review, challenging shortcuts and a patient mindset.  \n\nStaying with Measured Progress for a moment, what helps this value show up in practice in your area, and what tends to get in the way of it?"
+        },
+        {
+          "chunk_number": 11,
+          "speaker": "interviewee",
+          "text": "Clear guidelines and committed staff support careful review and public accountability. But developer demands and internal politics sometimes push us to compromise."
+        },
+        {
+          "chunk_number": 12,
+          "speaker": "interviewer",
+          "text": "I understand, so clear guidelines, committed colleagues and accountability help, while external pressure and politics can pull things away from Measured Progress.  \n\nLet me briefly reflect back what I heard on Measured Progress. It is about balancing heritage and change, taking time for thorough review, challenging shortcuts, and being willing to pause or reshape schemes so historic character is safeguarded. It is supported by clear policy and committed staff, and weakened by rushed timelines and political or commercial pressure. Did I get that right?"
+        },
+        {
+          "chunk_number": 13,
+          "speaker": "interviewee",
+          "text": "That's right. Our challenges come from pressure, but our commitment to responsible stewardship prevails in our work."
+        },
+        {
+          "chunk_number": 14,
+          "speaker": "interviewer",
+          "text": "That is very clear, thank you. I captured Measured Progress and responsible stewardship as key themes in what you shared.  \n\nLet me test something colleagues elsewhere have mentioned. Some people told me that integrity and public trust matter a lot, for example in the sense that when a supplier or partner offers gifts or hospitality around a contract or decision, they either politely decline or record it and keep meetings neutral, such as remote, when a decision is close.  \n\nDoes this resonate with your experience?"
+        },
+        {
+          "chunk_number": 15,
+          "speaker": "interviewee",
+          "text": "Yes. We avoid any gifts. We record interactions and keep meetings neutral to ensure our decisions remain free of undue influence."
+        },
+        {
+          "chunk_number": 16,
+          "speaker": "interviewer",
+          "text": "Thank you, that is helpful to hear. I understand that in your experience there is a clear practice of avoiding gifts, recording interactions and keeping meetings neutral to protect decisions from undue influence and maintain public trust.  \n\nComing back to what you see day to day, besides Measured Progress, is there another value you associate with the City at its best that feels important to name?"
+        },
+        {
+          "chunk_number": 17,
+          "speaker": "interviewee",
+          "text": "Another value is Integrity. We base decisions on principle, not profit, ensuring our duty to London's heritage remains uncompromised."
+        },
+        {
+          "chunk_number": 18,
+          "speaker": "interviewer",
+          "text": "Thank you, that is very clear. I hear Integrity as basing decisions on principle and duty to heritage, rather than profit or convenience.  \n\nIf we think just about Integrity in your context, can you share a recent moment where you saw it clearly in action, either in your own work or a colleague’s? What happened and what made it stand out as Integrity to you?"
+        },
+        {
+          "chunk_number": 19,
+          "speaker": "interviewee",
+          "text": "A colleague recently disclosed a personal connection to a project. He stepped aside immediately, keeping the review fair despite potential fallout. That's integrity."
+        },
+        {
+          "chunk_number": 20,
+          "speaker": "interviewer",
+          "text": "Thank you for sharing that, it is a very concrete example. I understand Integrity here as being transparent about conflicts, protecting fairness even when it might have personal costs.  \n\nOn an ordinary day, what would someone do or say that shows this value of Integrity in how they work?"
+        },
+        {
+          "chunk_number": 21,
+          "speaker": "interviewee",
+          "text": "They openly disclose any potential conflicts and ensure decisions are documented transparently. Every mention or disclosure in conversations reinforces our integrity."
+        },
+        {
+          "chunk_number": 22,
+          "speaker": "interviewer",
+          "text": "I understand, so everyday Integrity looks like proactive disclosure, clear documentation and reinforcing transparency in how people speak and record decisions.  \n\nStaying with Integrity, what helps that behaviour show up consistently, and what tends to get in the way?"
+        },
+        {
+          "chunk_number": 23,
+          "speaker": "interviewee",
+          "text": "Clear guidelines and an open team culture support integrity daily. But tight deadlines and political pressures sometimes tempt shortcuts."
+        },
+        {
+          "chunk_number": 24,
+          "speaker": "interviewer",
+          "text": "Thank you, that makes sense and fits with what you shared earlier about pressures.  \n\nLet me briefly reflect back Integrity. For you it is about principle over profit, being transparent about conflicts, documenting decisions clearly and speaking up about anything that could affect fairness. It is supported by clear guidelines and an open culture, and it is strained when deadlines are tight or there is political pressure that could tempt shortcuts. Did I get that right?"
+        },
+        {
+          "chunk_number": 25,
+          "speaker": "interviewee",
+          "text": "That's right. You captured it."
+        },
+        {
+          "chunk_number": 26,
+          "speaker": "interviewer",
+          "text": "Thank you. That is very helpful and clear.  \n\nOf the values we have talked about so far, such as Measured Progress and Integrity, which one or two do you think the City of London Corporation should focus on first?"
+        },
+        {
+          "chunk_number": 27,
+          "speaker": "interviewee",
+          "text": "I would focus on integrity first. Trust underpins every decision. Without that, measured progress loses its meaning."
+        },
+        {
+          "chunk_number": 28,
+          "speaker": "interviewer",
+          "text": "I understand, for you Integrity is the foundation and Measured Progress only really works if trust is solid.  \n\nThinking about the next few months, if you could choose one behaviour for the Corporation to either start, stop or continue to really strengthen Integrity, what would that be?"
+        },
+        {
+          "chunk_number": 29,
+          "speaker": "interviewee",
+          "text": "I would start mandatory disclosure of potential conflicts in every discussion. That builds trust and keeps our decision-making above reproach."
+        },
+        {
+          "chunk_number": 30,
+          "speaker": "interviewer",
+          "text": "I understand, you see routine, mandatory disclosure in every discussion as a practical way to make Integrity tangible and visible.  \n\nIf you could make one concrete change in day to day working life to support that, for example in meetings, templates, systems or feedback, what would you change to make those disclosures actually happen every time?"
+        },
+        {
+          "chunk_number": 31,
+          "speaker": "interviewee",
+          "text": "Implement a mandatory pre-meeting disclosure template. Everyone fills it out and it becomes part of the meeting record to ensure complete transparency."
+        },
+        {
+          "chunk_number": 32,
+          "speaker": "interviewer",
+          "text": "Thank you, that is very concrete and helpful. A pre meeting disclosure template that becomes part of the record feels like a clear way to normalise transparency.  \n\nLet me offer a short summary of what I heard from you. At its best, the City lives Measured Progress, carefully balancing heritage with change. In practice, that looks like halting or reshaping schemes that harm historic character, reviewing details patiently and challenging shortcuts. Clear guidelines, committed staff and public accountability help, while developer demands, tight deadlines and internal politics push against it.  \n\nIntegrity is the foundation value for you. It means decisions based on principle and duty to London’s heritage, not profit or convenience. Everyday signals are people openly disclosing conflicts, documenting decisions transparently and reinforcing this in how they speak. Guidelines and an open culture enable that, but pressure and urgency can tempt shortcuts.  \n\nYour top priority is to strengthen Integrity, because trust underpins everything else. Your main behavioural priority is to start mandatory conflict of interest disclosure in every discussion. Your number one implementation idea is a mandatory pre meeting disclosure template that everyone completes, stored with the meeting record to ensure consistent transparency.  \n\nDoes this summary reflect your input, or should I amend anything?"
+        },
+        {
+          "chunk_number": 33,
+          "speaker": "interviewee",
+          "text": "That's right."
+        }
+      ]
+    }
+  ]
+}
