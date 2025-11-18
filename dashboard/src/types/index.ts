@@ -7,8 +7,8 @@ export interface ValueOverview {
   value_id: string;
   label: string;
   interviewee_wording_examples: string[];
-  salience_0_to_5: number;
-  actualization_0_to_10: number;
+  importance_1_to_10: number;
+  realization_1_to_10: number;
   comments: string;
 }
 

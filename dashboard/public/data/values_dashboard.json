@@ -8,9 +8,9 @@
         "\"Yes, integrity is non-negotiable. We keep everything above board and transparent to build trust all through our work processes.\" (Thomas, Estates and Facilities Manager, interview_id: 70a6c79c-2969-4b6d-8273-d9daf453d526, chunk: 13)",
         "\"Another value is Integrity. We base decisions on principle, not profit, ensuring our duty to London's heritage remains uncompromised.\" (Sarah, Principal Conservation Officer, interview_id: e8289334-9373-4065-8a43-d2afd93ed805, chunk: 17)"
       ],
-      "salience_0_to_5": 5,
-      "actualization_0_to_10": 6,
-      "comments": "Integrity is a cross-cutting value, explicitly named by several interviewees and linked to gifts, conflicts of interest, and principled decision making. It is strongly present in daily practices like declining gifts, documenting decisions and disclosing conflicts, but Michael’s testimony highlights a persistent gap between rhetoric and reality, especially at senior levels. I rate salience as 5 because it appears centrally in all four interviews, and actualization as 6 to reflect meaningful everyday practice with clear shortfalls in leadership accountability and conviction."
+      "importance_1_to_10": 10,
+      "realization_1_to_10": 6,
+      "comments": "Integrity is a cross-cutting value, explicitly named by several interviewees and linked to gifts, conflicts of interest, and principled decision making. It is strongly present in daily practices like declining gifts, documenting decisions and disclosing conflicts, but one person's testimony highlights a persistent gap between rhetoric and reality, especially at senior levels. I rate importance as 10 because it appears centrally in all four interviews, and realization as 6 to reflect meaningful everyday practice with clear shortfalls in leadership accountability and conviction."
     },
     {
       "value_id": "transparency",
@@ -21,9 +21,9 @@
         "\"We keep everything above board and transparent to build trust all through our work processes.\" (Thomas, Estates and Facilities Manager, interview_id: 70a6c79c-2969-4b6d-8273-d9daf453d526, chunk: 13)",
         "\"Real accountability and honest transparency. Without those, everything is just talk.\" (Michael, HR Business Partner, interview_id: 30ecf270-4f52-4b4d-8e76-8dce7e0d5642, chunk: 21)"
       ],
-      "salience_0_to_5": 5,
-      "actualization_0_to_10": 7,
-      "comments": "Transparency shows up as open data and risk sharing, visible documentation, and keeping decisions free from undue influence. Interviewees describe concrete practices like sharing emails and minutes, documenting gifts, disclosing conflicts, and adding real-time risk items in meetings. Michael stresses a lack of \"honest transparency\" at senior levels, which signals an aspirational edge. I rate salience as 5 because transparency is central in Eleanor’s account and strongly echoed by Thomas, Sarah and Michael, and actualization as 7 because many transparent behaviours are already routine, though still uneven at the top."
+      "importance_1_to_10": 10,
+      "realization_1_to_10": 7,
+      "comments": "Transparency shows up as open data and risk sharing, visible documentation, and keeping decisions free from undue influence. Interviewees describe concrete practices like sharing emails and minutes, documenting gifts, disclosing conflicts, and adding real-time risk items in meetings. One person stresses a lack of \"honest transparency\" at senior levels, which signals an aspirational edge. I rate importance as 10 because transparency is central in several accounts and strongly echoed across interviewees, and realization as 7 because many transparent behaviours are already routine, though still uneven at the top."
     },
     {
       "value_id": "accountability",
@@ -33,9 +33,9 @@
         "\"They would be held fully accountable. No token apologies or cover ups. Real consequences would follow.\" (Michael, HR Business Partner, interview_id: 30ecf270-4f52-4b4d-8e76-8dce7e0d5642, chunk: 19)",
         "\"Clear guidelines and committed staff support careful review and public accountability.\" (Sarah, Principal Conservation Officer, interview_id: e8289334-9373-4065-8a43-d2afd93ed805, chunk: 11)"
       ],
-      "salience_0_to_5": 4,
-      "actualization_0_to_10": 3,
-      "comments": "Accountability is especially salient for Michael, who frames it as the missing piece that would turn integrity from box ticking into culture, with \"real consequences\" rather than token gestures. Sarah links accountability to clear guidelines and public scrutiny in planning decisions. Most of the language is aspirational (what \"would\" or \"should\" happen), and both politics and cover ups are mentioned as problems, so I rate salience as 4 but actualization only as 3, indicating that strong accountability is desired but only partially realised."
+      "importance_1_to_10": 8,
+      "realization_1_to_10": 3,
+      "comments": "Accountability is especially important to one person, who frames it as the missing piece that would turn integrity from box ticking into culture, with \"real consequences\" rather than token gestures. Another person links accountability to clear guidelines and public scrutiny in planning decisions. Most of the language is aspirational (what \"would\" or \"should\" happen), and both politics and cover ups are mentioned as problems, so I rate importance as 8 but realization only as 3, indicating that strong accountability is desired but only partially realised."
     },
     {
       "value_id": "teamwork",
@@ -46,9 +46,9 @@
         "\"I'd choose collaboration next. It unites diverse insights and strengthens the team approach behind actionable, evidence driven solutions for our work.\" (Eleanor, analyst, interview_id: df970721-fb54-4ed1-8d58-e4efebb9d272, chunk: 17)",
         "\"Teamwork.\" (Eleanor, analyst, interview_id: df970721-fb54-4ed1-8d58-e4efebb9d272, chunk: 19)"
       ],
-      "salience_0_to_5": 4,
-      "actualization_0_to_10": 8,
-      "comments": "Teamwork (often described as \"all in spirit\") is vivid in Thomas’s account of crisis response and everyday appreciation, and in Eleanor’s examples of colleagues checking in, brainstorming and blending expertise. While not centred in Michael’s or Sarah’s stories, it underpins how front-line work gets done. Given multiple detailed stories and very few noted obstacles, I rate salience as 4 and actualization as 8: teamwork is a lived strength more than an aspiration."
+      "importance_1_to_10": 8,
+      "realization_1_to_10": 8,
+      "comments": "Teamwork (often described as \"all in spirit\") is vivid in two people's accounts of crisis response and everyday appreciation, with examples of colleagues checking in, brainstorming and blending expertise. While not centred in all stories, it underpins how front-line work gets done. Given multiple detailed stories and very few noted obstacles, I rate importance as 8 and realization as 8: teamwork is a lived strength more than an aspiration."
     },
     {
       "value_id": "measured_progress",
@@ -59,20 +59,20 @@
         "\"Measured Progress.\" (Sarah, Principal Conservation Officer, interview_id: e8289334-9373-4065-8a43-d2afd93ed805, chunk: 5)",
         "\"Our challenges come from pressure, but our commitment to responsible stewardship prevails in our work.\" (Sarah, Principal Conservation Officer, interview_id: e8289334-9373-4065-8a43-d2afd93ed805, chunk: 13)"
       ],
-      "salience_0_to_5": 3,
-      "actualization_0_to_10": 6,
-      "comments": "Measured Progress captures the balance between heritage and development in Sarah’s area, with strong language around refusing shortcuts and insisting on responsible stewardship. Thomas’s pride in \"maintaining history and safety\" aligns with this theme, though less explicitly. Because this value is explicit and detailed in one interview and implicit in another, I rate salience as 3. Sarah’s examples suggest that despite political and commercial pressure, the team often succeeds in holding the line, so I rate actualization as 6: real but under strain."
+      "importance_1_to_10": 6,
+      "realization_1_to_10": 6,
+      "comments": "Measured Progress captures the balance between heritage and development in one person's area, with strong language around refusing shortcuts and insisting on responsible stewardship. Another person's pride in \"maintaining history and safety\" aligns with this theme, though less explicitly. Because this value is explicit and detailed in one interview and implicit in another, I rate importance as 6. Examples suggest that despite political and commercial pressure, the team often succeeds in holding the line, so I rate realization as 6: real but under strain."
     },
     {
       "value_id": "authentic_values",
-      "label": "Authentic Values (Not Just Rhetoric)",
+      "label": "Authenticity",
       "interviewee_wording_examples": [
         "\"At its best culture becomes a performed rhetoric. People recite values while politics actually decide outcomes. Meaningful change rarely happens.\" (Michael, HR Business Partner, interview_id: 30ecf270-4f52-4b4d-8e76-8dce7e0d5642, chunk: 1)",
         "\"Yes. It sounds about right. I'm cynical but that's just real.\" (Michael, HR Business Partner, interview_id: 30ecf270-4f52-4b4d-8e76-8dce7e0d5642, chunk: 3)"
       ],
-      "salience_0_to_5": 2,
-      "actualization_0_to_10": 2,
-      "comments": "Michael articulates a clear meta-value: that stated values should correspond to real decisions and change, not just polished rhetoric. This concern about authenticity sits underneath the more specific values of integrity, transparency and accountability. Only one interview voices it strongly, but it reframes the entire values conversation, so I rate salience as 2 at the sample level. Because he describes a pattern where politics and box-ticking dominate and meaningful change is rare, I rate actualization as 2: authentic values are largely aspirational today."
+      "importance_1_to_10": 4,
+      "realization_1_to_10": 2,
+      "comments": "One person articulates a clear meta-value: that stated values should correspond to real decisions and change, not just polished rhetoric. This concern about authenticity sits underneath the more specific values of integrity, transparency and accountability. Only one interview voices it strongly, but it reframes the entire values conversation, so I rate importance as 4 at the sample level. Because this person describes a pattern where politics and box-ticking dominate and meaningful change is rare, I rate realization as 2: authentic values are largely aspirational today."
     }
   ],
   "value_details": {
@@ -501,7 +501,7 @@
       ]
     },
     "authentic_values": {
-      "label": "Authentic Values (Not Just Rhetoric)",
+      "label": "Authenticity",
       "stories": [
         {
           "short_name": "Performed Rhetoric Diagnosis",

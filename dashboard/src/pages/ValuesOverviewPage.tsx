@@ -2,13 +2,15 @@ import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import { type ValueOverview } from '../types';
+import { TranscriptViewer } from '../components/TranscriptViewer';
 import styles from './ValuesOverviewPage.module.css';
 
 export function ValuesOverviewPage() {
   const { data, loading, error } = useData();
   const navigate = useNavigate();
-  const [sortBy, setSortBy] = useState<'salience' | 'actualization' | null>(null);
+  const [sortBy, setSortBy] = useState<'importance' | 'realization' | null>(null);
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
+  const [transcriptViewerOpen, setTranscriptViewerOpen] = useState(false);
 
   const sortedValues = useMemo(() => {
     if (!data?.values_overview) return [];
@@ -17,8 +19,8 @@ export function ValuesOverviewPage() {
 
     if (sortBy) {
       sorted.sort((a, b) => {
-        const aValue = sortBy === 'salience' ? a.salience_0_to_5 : a.actualization_0_to_10;
-        const bValue = sortBy === 'salience' ? b.salience_0_to_5 : b.actualization_0_to_10;
+        const aValue = sortBy === 'importance' ? a.importance_1_to_10 : a.realization_1_to_10;
+        const bValue = sortBy === 'importance' ? b.importance_1_to_10 : b.realization_1_to_10;
         return sortOrder === 'desc' ? bValue - aValue : aValue - bValue;
       });
     }
@@ -26,7 +28,7 @@ export function ValuesOverviewPage() {
     return sorted;
   }, [data, sortBy, sortOrder]);
 
-  const handleSort = (column: 'salience' | 'actualization') => {
+  const handleSort = (column: 'importance' | 'realization') => {
     if (sortBy === column) {
       setSortOrder(sortOrder === 'desc' ? 'asc' : 'desc');
     } else {
@@ -41,7 +43,7 @@ export function ValuesOverviewPage() {
 
   const formatWording = (examples: string[]) => {
     if (!examples.length) return 'No examples available';
-    return examples[0].substring(0, 150) + (examples[0].length > 150 ? '...' : '');
+    return examples[0].substring(0, 200) + (examples[0].length > 200 ? '...' : '');
   };
 
   if (loading) {
@@ -74,10 +76,13 @@ export function ValuesOverviewPage() {
     <div className={styles.page}>
       <div className={styles.pageHeader}>
         <h2 className={styles.pageTitle}>Values Overview</h2>
-        <p className={styles.pageDescription}>
-          This dashboard visualizes the core values identified from interview data,
-          showing both how salient (important) each value is and how well it's being actualized in practice.
-        </p>
+        <button
+          className="btn btn-ghost"
+          onClick={() => setTranscriptViewerOpen(true)}
+          style={{ marginBottom: 'var(--spacing-lg)' }}
+        >
+          View Interview Transcripts
+        </button>
       </div>
 
       <div className={styles.table}>
@@ -85,16 +90,24 @@ export function ValuesOverviewPage() {
           <div>Value</div>
           <div>Interviewee Wording</div>
           <div
-            onClick={() => handleSort('salience')}
+            onClick={() => handleSort('importance')}
             style={{ cursor: 'pointer' }}
+            className={styles.tooltip}
           >
-            Salience {sortBy === 'salience' && (sortOrder === 'desc' ? '↓' : '↑')}
+            Importance {sortBy === 'importance' && (sortOrder === 'desc' ? '↓' : '↑')}
+            <span className={styles.tooltipText}>
+              How central and widely recognized this value is across interviews (1-10 scale)
+            </span>
           </div>
           <div
-            onClick={() => handleSort('actualization')}
+            onClick={() => handleSort('realization')}
             style={{ cursor: 'pointer' }}
+            className={styles.tooltip}
           >
-            Actualization {sortBy === 'actualization' && (sortOrder === 'desc' ? '↓' : '↑')}
+            Realization {sortBy === 'realization' && (sortOrder === 'desc' ? '↓' : '↑')}
+            <span className={styles.tooltipText}>
+              How well this value is being lived out in practice today (1-10 scale)
+            </span>
           </div>
           <div></div>
         </div>
@@ -107,30 +120,37 @@ export function ValuesOverviewPage() {
           >
             <div className={styles.valueLabel}>{value.label}</div>
 
-            <div className={styles.wordingExamples}>
-              {formatWording(value.interviewee_wording_examples)}
+            <div className={styles.wordingExamplesWrapper}>
+              <div className={styles.wordingExamples}>
+                {formatWording(value.interviewee_wording_examples)}
+              </div>
+              {value.interviewee_wording_examples.length > 0 && value.interviewee_wording_examples[0].length > 200 && (
+                <div className={styles.wordingTooltip}>
+                  {value.interviewee_wording_examples[0]}
+                </div>
+              )}
             </div>
 
             <div className={styles.scoreColumn}>
-              <span className={`${styles.scoreValue} ${styles.salience}`}>
-                {value.salience_0_to_5}/5
+              <span className={`${styles.scoreValue} ${styles.importance}`}>
+                {value.importance_1_to_10}/10
               </span>
               <div className={styles.scoreBar}>
                 <div
-                  className={`${styles.scoreFill} ${styles.salience}`}
-                  style={{ width: `${(value.salience_0_to_5 / 5) * 100}%` }}
+                  className={`${styles.scoreFill} ${styles.importance}`}
+                  style={{ width: `${(value.importance_1_to_10 / 10) * 100}%` }}
                 />
               </div>
             </div>
 
             <div className={styles.scoreColumn}>
-              <span className={`${styles.scoreValue} ${styles.actualization}`}>
-                {value.actualization_0_to_10}/10
+              <span className={`${styles.scoreValue} ${styles.realization}`}>
+                {value.realization_1_to_10}/10
               </span>
               <div className={styles.scoreBar}>
                 <div
-                  className={`${styles.scoreFill} ${styles.actualization}`}
-                  style={{ width: `${(value.actualization_0_to_10 / 10) * 100}%` }}
+                  className={`${styles.scoreFill} ${styles.realization}`}
+                  style={{ width: `${(value.realization_1_to_10 / 10) * 100}%` }}
                 />
               </div>
             </div>
@@ -139,6 +159,12 @@ export function ValuesOverviewPage() {
           </div>
         ))}
       </div>
+
+      <TranscriptViewer
+        interviews={data?.interviews_raw || []}
+        open={transcriptViewerOpen}
+        onClose={() => setTranscriptViewerOpen(false)}
+      />
     </div>
   );
 }

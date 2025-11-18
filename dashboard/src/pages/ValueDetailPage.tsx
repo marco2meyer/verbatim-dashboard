@@ -59,15 +59,15 @@ export function ValueDetailPage() {
           <h2 className={styles.headerTitle}>{valueDetails.label}</h2>
           <div className={styles.scores}>
             <div className={styles.scoreItem}>
-              <div className={styles.scoreLabel}>Salience</div>
-              <div className={`${styles.scoreValue} ${styles.salience}`}>
-                {valueOverview.salience_0_to_5}/5
+              <div className={styles.scoreLabel}>Importance</div>
+              <div className={`${styles.scoreValue} ${styles.importance}`}>
+                {valueOverview.importance_1_to_10}/10
               </div>
             </div>
             <div className={styles.scoreItem}>
-              <div className={styles.scoreLabel}>Actualization</div>
-              <div className={`${styles.scoreValue} ${styles.actualization}`}>
-                {valueOverview.actualization_0_to_10}/10
+              <div className={styles.scoreLabel}>Realization</div>
+              <div className={`${styles.scoreValue} ${styles.realization}`}>
+                {valueOverview.realization_1_to_10}/10
               </div>
             </div>
           </div>

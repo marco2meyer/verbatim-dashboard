@@ -82,11 +82,11 @@
   font-size: 1.125rem;
 }
 
-.scoreValue.salience {
+.scoreValue.importance {
   color: var(--color-coral);
 }
 
-.scoreValue.actualization {
+.scoreValue.realization {
   color: var(--color-sage);
 }
 
@@ -102,11 +102,11 @@
   transition: width 0.3s ease;
 }
 
-.scoreFill.salience {
+.scoreFill.importance {
   background: var(--color-coral);
 }
 
-.scoreFill.actualization {
+.scoreFill.realization {
   background: var(--color-sage);
 }
 
@@ -122,6 +122,76 @@
   text-align: center;
   padding: var(--spacing-3xl);
   color: var(--color-slate);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  border-bottom: 1px dotted white;
+}
+
+.tooltip .tooltipText {
+  visibility: hidden;
+  width: 300px;
+  background-color: var(--color-slate);
+  color: white;
+  text-align: left;
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-sm);
+  position: absolute;
+  z-index: 1000;
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.4;
+  box-shadow: var(--shadow-lg);
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.wordingExamplesWrapper {
+  position: relative;
+  cursor: help;
+}
+
+.wordingExamplesWrapper .wordingTooltip {
+  visibility: hidden;
+  width: 400px;
+  background-color: var(--color-slate);
+  color: white;
+  text-align: left;
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-md);
+  position: absolute;
+  z-index: 1000;
+  top: -10px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  box-shadow: var(--shadow-lg);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.wordingExamplesWrapper:hover .wordingTooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.transcriptButton {
+  margin-bottom: var(--spacing-lg);
 }
 
 @media (max-width: 1024px) {

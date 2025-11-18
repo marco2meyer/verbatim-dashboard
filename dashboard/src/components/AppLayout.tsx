@@ -24,17 +24,6 @@ export function AppLayout({ children }: AppLayoutProps) {
               <p className={styles.subtitle}>Values Analysis Dashboard</p>
             </div>
           </div>
-
-          <div className={styles.legend}>
-            <div className={styles.legendItem}>
-              <span className={`${styles.legendDot} ${styles.salience}`}></span>
-              <span>Salience (0-5)</span>
-            </div>
-            <div className={styles.legendItem}>
-              <span className={`${styles.legendDot} ${styles.actualization}`}></span>
-              <span>Actualization (0-10)</span>
-            </div>
-          </div>
         </div>
       </header>
 

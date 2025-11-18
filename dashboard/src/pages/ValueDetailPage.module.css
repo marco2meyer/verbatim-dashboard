@@ -50,11 +50,11 @@
   font-weight: 600;
 }
 
-.scoreValue.salience {
+.scoreValue.importance {
   color: var(--color-coral);
 }
 
-.scoreValue.actualization {
+.scoreValue.realization {
   color: var(--color-sage);
 }
 
