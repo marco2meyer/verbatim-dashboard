@@ -186,6 +186,117 @@
   font-size: 1rem;
 }
 
+.editButton {
+  background: transparent;
+  color: var(--color-slate);
+  border: none;
+  font-size: 1.125rem;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.editButton:hover {
+  background: rgba(0, 0, 0, 0.05);
+  opacity: 1;
+}
+
+.editContainer {
+  margin-top: var(--spacing-sm);
+}
+
+.editTextarea {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 2px solid var(--color-sage);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.8;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.editTextarea:focus {
+  outline: none;
+  border-color: var(--color-forest-ink);
+  box-shadow: 0 0 0 3px rgba(39, 53, 51, 0.1);
+}
+
+.editButtons {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+.saveButton {
+  background: var(--color-forest-ink);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.saveButton:hover {
+  background: var(--color-charcoal);
+}
+
+.cancelButton {
+  background: var(--color-light-gray);
+  color: var(--color-forest-ink);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.cancelButton:hover {
+  background: var(--color-medium-gray);
+}
+
+.originalTextContainer {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.originalTextLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-medium-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-xs);
+}
+
+.originalText {
+  color: var(--color-slate);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  font-style: italic;
+  margin-bottom: var(--spacing-sm);
+}
+
+.restoreButton {
+  background: transparent;
+  color: var(--color-sage);
+  border: 1px solid var(--color-sage);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.restoreButton:hover {
+  background: var(--color-sage);
+  color: white;
+}
+
 .emptyState {
   text-align: center;
   padding: var(--spacing-3xl);

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { type TranscriptViewerProps, type Interview, type Chunk } from '../types';
+import { useData } from '../context/DataContext';
 import styles from './TranscriptViewer.module.css';
 
 export function TranscriptViewer({
@@ -10,6 +11,9 @@ export function TranscriptViewer({
 }: TranscriptViewerProps) {
   const chunkRefs = useRef<Record<number, HTMLDivElement | null>>({});
   const [selectedInterviewId, setSelectedInterviewId] = useState<string | null>(null);
+  const [editingChunk, setEditingChunk] = useState<{ interviewId: string; chunkNumber: number } | null>(null);
+  const [editText, setEditText] = useState<string>('');
+  const { data, saveData } = useData();
 
   // When focusedSource changes, update selected interview
   useEffect(() => {
@@ -48,6 +52,71 @@ export function TranscriptViewer({
 
   const handleInterviewChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedInterviewId(e.target.value);
+  };
+
+  const handleEditClick = (interviewId: string, chunk: Chunk) => {
+    setEditingChunk({ interviewId, chunkNumber: chunk.chunk_number });
+    setEditText(chunk.edited_text || chunk.text);
+  };
+
+  const handleCancelEdit = () => {
+    setEditingChunk(null);
+    setEditText('');
+  };
+
+  const handleSaveEdit = async () => {
+    if (!editingChunk || !data) return;
+
+    const updatedData = { ...data };
+    const interview = updatedData.interviews_raw.find(
+      (i) => i.interview_id === editingChunk.interviewId
+    );
+
+    if (interview) {
+      const chunk = interview.chunks.find((c) => c.chunk_number === editingChunk.chunkNumber);
+      if (chunk) {
+        // Only set edited_text if it's different from the original
+        if (editText !== chunk.text) {
+          chunk.edited_text = editText;
+        } else {
+          delete chunk.edited_text;
+        }
+      }
+    }
+
+    try {
+      await saveData(updatedData);
+      setEditingChunk(null);
+      setEditText('');
+    } catch (err) {
+      console.error('Failed to save edit:', err);
+      alert('Failed to save changes. Please try again.');
+    }
+  };
+
+  const handleRestoreOriginal = async (interviewId: string, chunkNumber: number) => {
+    if (!data) return;
+
+    const updatedData = { ...data };
+    const interview = updatedData.interviews_raw.find((i) => i.interview_id === interviewId);
+
+    if (interview) {
+      const chunk = interview.chunks.find((c) => c.chunk_number === chunkNumber);
+      if (chunk) {
+        delete chunk.edited_text;
+      }
+    }
+
+    try {
+      await saveData(updatedData);
+    } catch (err) {
+      console.error('Failed to restore original:', err);
+      alert('Failed to restore original text. Please try again.');
+    }
+  };
+
+  const getDisplayText = (chunk: Chunk) => {
+    return chunk.edited_text || chunk.text;
   };
 
   if (!currentInterview) {
@@ -103,6 +172,9 @@ export function TranscriptViewer({
               ? styles.chunkInterviewee
               : styles.chunkInterviewer;
             const highlightClass = isHighlighted ? styles.chunkHighlight : '';
+            const isEditing = editingChunk?.interviewId === currentInterview.interview_id &&
+                            editingChunk?.chunkNumber === chunk.chunk_number;
+            const hasEdit = !!chunk.edited_text;
 
             return (
               <div
@@ -117,8 +189,51 @@ export function TranscriptViewer({
                       : 'Interviewer'}
                   </span>
                   <span className={styles.chunkNumber}>#{chunk.chunk_number}</span>
+                  {!isEditing && (
+                    <button
+                      className={styles.editButton}
+                      onClick={() => handleEditClick(currentInterview.interview_id, chunk)}
+                      title="Edit this chunk"
+                    >
+                      ✎
+                    </button>
+                  )}
                 </div>
-                <div className={styles.chunkText}>{chunk.text}</div>
+                {isEditing ? (
+                  <div className={styles.editContainer}>
+                    <textarea
+                      className={styles.editTextarea}
+                      value={editText}
+                      onChange={(e) => setEditText(e.target.value)}
+                      rows={5}
+                      autoFocus
+                    />
+                    <div className={styles.editButtons}>
+                      <button className={styles.saveButton} onClick={handleSaveEdit}>
+                        Save
+                      </button>
+                      <button className={styles.cancelButton} onClick={handleCancelEdit}>
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <>
+                    <div className={styles.chunkText}>{getDisplayText(chunk)}</div>
+                    {hasEdit && (
+                      <div className={styles.originalTextContainer}>
+                        <div className={styles.originalTextLabel}>Original:</div>
+                        <div className={styles.originalText}>{chunk.text}</div>
+                        <button
+                          className={styles.restoreButton}
+                          onClick={() => handleRestoreOriginal(currentInterview.interview_id, chunk.chunk_number)}
+                        >
+                          Restore Original
+                        </button>
+                      </div>
+                    )}
+                  </>
+                )}
               </div>
             );
           })}

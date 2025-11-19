@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import { TranscriptViewer } from '../components/TranscriptViewer';
 import { type StoryDetail, type EnablerOrBlockerDetail } from '../types';
+import { getTextFromSource } from '../utils/chunkHelpers';
 import styles from './ValueDetailPage.module.css';
 
 export function ValueDetailPage() {
@@ -102,7 +103,9 @@ export function ValueDetailPage() {
                     {renderStars(story.compellingness_1_to_5)}
                   </div>
                 </div>
-                <p className={styles.itemQuote}>"{story.quote_verbatim}"</p>
+                <p className={styles.itemQuote}>
+                  "{getTextFromSource(data.interviews_raw, story.source.interview_id, story.source.chunk_numbers) || story.quote_verbatim}"
+                </p>
                 <div className={styles.itemFooter}>
                   <div className={styles.itemAuthor}>
                     <strong>{story.interviewee_first_name}</strong>, {story.interviewee_role}
@@ -139,7 +142,9 @@ export function ValueDetailPage() {
                     {renderStars(enabler.importance_1_to_5)}
                   </div>
                 </div>
-                <p className={styles.itemQuote}>"{enabler.quote_with_name_and_role}"</p>
+                <p className={styles.itemQuote}>
+                  "{getTextFromSource(data.interviews_raw, enabler.source.interview_id, enabler.source.chunk_numbers) || enabler.quote_with_name_and_role}"
+                </p>
                 <div className={styles.itemFooter}>
                   <div className={styles.viewTranscript}>
                     View in transcript →
@@ -173,7 +178,9 @@ export function ValueDetailPage() {
                     {renderStars(blocker.importance_1_to_5)}
                   </div>
                 </div>
-                <p className={styles.itemQuote}>"{blocker.quote_with_name_and_role}"</p>
+                <p className={styles.itemQuote}>
+                  "{getTextFromSource(data.interviews_raw, blocker.source.interview_id, blocker.source.chunk_numbers) || blocker.quote_with_name_and_role}"
+                </p>
                 <div className={styles.itemFooter}>
                   <div className={styles.viewTranscript}>
                     View in transcript →

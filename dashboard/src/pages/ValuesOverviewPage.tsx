@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import { type ValueOverview } from '../types';
 import { TranscriptViewer } from '../components/TranscriptViewer';
+import { getTextFromSource } from '../utils/chunkHelpers';
 import styles from './ValuesOverviewPage.module.css';
 
 export function ValuesOverviewPage() {
@@ -149,9 +150,14 @@ export function ValuesOverviewPage() {
               onClick={(e) => handleExampleClick(e, value.interviewee_wording_examples[0])}
               title="Click to view in transcript"
             >
-              {value.interviewee_wording_examples.length > 0
-                ? parseExample(value.interviewee_wording_examples[0]).quote
-                : 'No examples available'}
+              {value.interviewee_wording_examples.length > 0 ? (() => {
+                const parsed = parseExample(value.interviewee_wording_examples[0]);
+                // Get edited text if available, otherwise use the parsed quote
+                const displayText = parsed.interview_id && parsed.chunk_number && data?.interviews_raw
+                  ? getTextFromSource(data.interviews_raw, parsed.interview_id, [parsed.chunk_number]) || parsed.quote
+                  : parsed.quote;
+                return displayText;
+              })() : 'No examples available'}
             </div>
 
             <div className={styles.scoreColumn}>

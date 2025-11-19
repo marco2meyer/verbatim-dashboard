@@ -5,6 +5,8 @@ interface DataContextType {
   data: RootData | null;
   loading: boolean;
   error: string | null;
+  saveData: (newData: RootData) => Promise<void>;
+  updateData: (newData: RootData) => void;
 }
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
@@ -33,8 +35,33 @@ export function DataProvider({ children }: { children: ReactNode }) {
     loadData();
   }, []);
 
+  const updateData = (newData: RootData) => {
+    setData(newData);
+  };
+
+  const saveData = async (newData: RootData) => {
+    try {
+      const response = await fetch('http://localhost:3001/api/save-data', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to save data');
+      }
+
+      setData(newData);
+    } catch (err) {
+      console.error('Error saving data:', err);
+      throw err;
+    }
+  };
+
   return (
-    <DataContext.Provider value={{ data, loading, error }}>
+    <DataContext.Provider value={{ data, loading, error, saveData, updateData }}>
       {children}
     </DataContext.Provider>
   );

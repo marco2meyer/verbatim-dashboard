@@ -41,6 +41,7 @@ export interface Chunk {
   chunk_number: number;
   speaker: 'interviewee' | 'interviewer';
   text: string;
+  edited_text?: string;
 }
 
 export interface Interview {

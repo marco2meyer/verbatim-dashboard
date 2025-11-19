@@ -7,6 +7,11 @@ A lightweight values dashboard built with React, TypeScript, and Vite, showcasin
 - **Values Overview**: Browse all identified values with salience and actualization scores
 - **Value Details**: Explore stories, enablers, and blockers for each value
 - **Transcript Viewer**: Click any quote to view the full interview transcript with highlighted relevant chunks
+- **Interview Editing**: Edit interview chunks directly in the transcript viewer to fix transcription errors
+  - Editable text fields for each chunk
+  - Original text displayed underneath edited versions
+  - Restore original button to revert edits
+  - Edited versions persist to JSON and display throughout the dashboard
 - **Data-Driven**: Fully powered by JSON data from the analysis pipeline
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **Verbatim Brand**: Implements the "Modern Depth" color palette and typography system
@@ -33,13 +38,23 @@ npm install
 
 ### Development
 
-Run the development server:
+To enable the interview editing feature, you need to run both the frontend and backend servers:
 
+**Terminal 1 - Backend Server (for saving edits):**
+```bash
+npm run server
+```
+
+This starts the data persistence server on `http://localhost:3001`
+
+**Terminal 2 - Frontend Development Server:**
 ```bash
 npm run dev
 ```
 
 The app will be available at `http://localhost:5173`
+
+**Note**: You can run the frontend alone without the backend, but editing functionality will not work without the backend server running.
 
 ### Build
 
